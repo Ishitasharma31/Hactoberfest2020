@@ -1,0 +1,104 @@
+//contributed by ishita
+//Hollow Square Star Pattern
+
+#include <stdio.h>
+
+int main()  
+{  
+    int n;  
+    printf("Enter the number of rows");  
+    scanf("%d",&n);  
+    for(int i=1;i<=n;i++)  
+    {  
+        for(int j=1;j<=n;j++)  
+        {  
+            if(i==1 ||i==n||j==1||j==n)  
+            {  
+            printf("*");  
+            }  
+            else  
+            printf(" ");  
+        }  
+        printf("\n");  
+    }  
+} 
+
+
+//Right Triangle Star Pattern
+
+#include <stdio.h>  
+  
+int main()  
+{  
+    int n;  
+    printf("Enter the number of rows");  
+    scanf("%d",&n);  
+    for(int i=1;i<=n;i++)  
+    {  
+        for(int j=1;j<=i;j++)  
+        {  
+            printf("* ");  
+        }  
+        printf("\n");  
+    }  
+    return 0;  
+}  
+
+//Mirrored Right Triangle Star Pattern
+
+#include <stdio.h>  
+  
+int main()  
+{  
+    int n,m=1;  
+    printf("Enter the number of rows");  
+    scanf("%d",&n);  
+    for(int i=n;i>=1;i--)  
+    {  
+        for(int j=1;j<=i-1;j++)  
+        {  
+          printf(" ");  
+        }  
+        for(int k=1;k<=m;k++)  
+        {  
+            printf("*");  
+        }  
+        printf("\n");  
+        m++;  
+    }  
+    return 0;  
+}  
+
+//Pyramid Star Pattern
+
+#include <stdio.h>  
+int main()  
+{  
+    int n,m;  
+    printf("Enter the number of rows");  
+    scanf("%d",&n);  
+    m=n;  
+   for(int i=1;i<=n;i++)  
+   {  
+       for(int j=1;j<=m-1;j++)  
+       {  
+           printf(" ");  
+       }  
+       for(int k=1;k<=2*i-1;k++)  
+       {  
+         printf("*");  
+       }  
+       m--;  
+     
+      printf("\n");  
+    }  
+    return 0;  
+}  
+
+
+      
+ 
+       
+      
+       
+
